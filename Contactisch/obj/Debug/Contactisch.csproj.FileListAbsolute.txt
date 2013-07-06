@@ -1,0 +1,7 @@
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\bin\Contactisch.dll
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\bin\Contactisch.pdb
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\bin\EntityFramework.dll
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\bin\EntityFramework.xml
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\obj\Debug\Contactisch.csprojResolveAssemblyReference.cache
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\obj\Debug\Contactisch.dll
+C:\Users\Paul-Jan\Projects\Contactisch\Contactisch\obj\Debug\Contactisch.pdb
