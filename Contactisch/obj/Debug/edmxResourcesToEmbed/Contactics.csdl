@@ -16,6 +16,7 @@
     <Property Type="String" Name="Username" Nullable="false" />
     <Property Type="String" Name="Password" Nullable="false" />
     <NavigationProperty Name="Contacts" Relationship="Contactics.UserContact" FromRole="User" ToRole="Contact" />
+    <Property Type="Guid" Name="Salt" Nullable="false" />
   </EntityType>
   <EntityType Name="Contact">
     <Key>

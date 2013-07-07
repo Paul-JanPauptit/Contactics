@@ -9,16 +9,16 @@ namespace Contactisch.Misc
 {
     public class Encryption
     {
-        public static string makeHashSHA256(string aText)
+        public static string MakeHash(string aText, string aSalt)
         {
-            byte[] data = Encoding.UTF8.GetBytes(aText);
+            byte[] data = Encoding.UTF8.GetBytes(aText + aSalt);
             SHA256Managed generator = new SHA256Managed();
             byte[] hashData = generator.ComputeHash(data);
 
-            return makeHexString(hashData);
+            return MakeHexString(hashData);
         }
 
-        private static string makeHexString(byte[] aData)
+        private static string MakeHexString(byte[] aData)
         {
             StringBuilder builder = new StringBuilder(2 * aData.Length);
 

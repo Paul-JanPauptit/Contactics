@@ -21,30 +21,17 @@ namespace Contactisch
             MessageLabel.Text = "";
 
             String username = Username.Text;
-            String password = Encryption.makeHashSHA256(Password.Text);
+            String password = Password.Text;
 
-            using (var context = new ContacticsContext())
+            if (ValidateLogin(username, password))
             {
-                User user = (
-                    from
-                        u in context.Users
-                    where
-                        u.Username == username &&
-                        u.Password == password
-                    select
-                        u).FirstOrDefault();
-
-
-                if (user != null)
-                {
-                    FormsAuthentication.RedirectFromLoginPage(username, true);
-                }
-                else
-                    MessageLabel.Text = "Invalid username or password.";
+                FormsAuthentication.RedirectFromLoginPage(username, true);
             }
+            else
+                MessageLabel.Text = "Invalid username or password.";
         }
 
-        protected bool login(String aUsername, String aPassword)
+        protected bool ValidateLogin(String aUsername, String aPassword)
         {
             bool isValid = false;
 
@@ -54,9 +41,9 @@ namespace Contactisch
 
                 if (user != null)
                 {
-                    String hashedPassword = Encryption.makeHash(aPassword, user.Salt);
+                    String hashedPassword = Encryption.MakeHash(aPassword, user.Salt.ToString());
 
-                    isValid = (hashedPassword == user.Password);
+                    isValid = String.Equals(hashedPassword, user.Password, StringComparison.Ordinal);
                 }
             }
 
