@@ -65,8 +65,13 @@
   <ItemGroup>
     <Content Include="Contactics.edmx.sql" />
     <Content Include="Contacts.aspx" />
+    <Content Include="Images\LogoMain.png" />
+    <Content Include="Layout\Main.css" />
     <Content Include="Login.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contact.cs">
@@ -103,6 +108,13 @@
     </Compile>
     <Compile Include="Misc\Encryption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Contactics.tt</DependentUpon>
     </Compile>

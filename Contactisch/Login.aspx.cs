@@ -28,7 +28,10 @@ namespace Contactisch
                 FormsAuthentication.RedirectFromLoginPage(username, true);
             }
             else
+            {
+                ErrorContainer.Visible = true;
                 MessageLabel.Text = "Invalid username or password.";
+            }
         }
 
         protected bool ValidateLogin(String aUsername, String aPassword)

@@ -4,23 +4,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Contactisch</title>
+    <link rel="stylesheet" type="text/css" href="Layout/Main.css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:Label ID="MessageLabel" runat="server" Text=""></asp:Label>
-        <br />
-        <asp:Label ID="UsernameLabel" runat="server" Text="Username"></asp:Label>
-        <asp:TextBox ID="Username" runat="server"></asp:TextBox>
-        <br />
-        <asp:Label ID="PasswordLabel" runat="server" Text="Password"></asp:Label>
-        <asp:TextBox ID="Password" runat="server"></asp:TextBox>
-        <br />
-        <asp:Button ID="LoginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
-        <br />
-    
+    <img id="logo" class="centerHorizontal" src="Images/LogoMain.png" />
+    <div id="login" class="box centerHorizontal loginBox">
+        <form id="form1" runat="server" defaultfocus="Username">
+            <asp:Panel ID="ErrorContainer" CssClass="errorContainer" runat="server" Visible="false">
+                <asp:Label CssClass="errorMessage" ID="MessageLabel" runat="server" Text=""></asp:Label>
+            </asp:Panel>
+            <div class="label">
+                <asp:Label ID="UsernameLabel" runat="server" Text="Username"></asp:Label>
+            </div>
+            <div class="inputContainer">
+                <asp:TextBox CssClass="input" ID="Username" runat="server"></asp:TextBox>
+            </div>
+            <div class="label">
+                <asp:Label ID="PasswordLabel" runat="server" Text="Password"></asp:Label>
+                <a class="forgotPassword" href="ResetPassword.aspx">Forgot your password?</a>
+            </div>
+            <div class="inputContainer">
+                <asp:TextBox CssClass="input" ID="Password" runat="server"></asp:TextBox>
+            </div>
+            <asp:Button ID="LoginButton" CssClass="button loginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
+        </form>
     </div>
-    </form>
 </body>
 </html>

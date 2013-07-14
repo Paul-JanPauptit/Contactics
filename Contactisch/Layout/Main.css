@@ -1,0 +1,110 @@
+﻿body {
+    background-color: #ffffff;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.input {
+    border: 1px solid #dedae1;
+    font-size: 13px;
+    margin-bottom: 16px;
+    padding: 4px;
+    width: 100%;
+    margin-left: -5px;
+    color: #24355f;
+}
+
+.inputContainer 
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+}
+
+.label {
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+}
+
+.centerHorizontal {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    left: -32px;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 0px;
+    display: table;
+}
+
+#login {
+    margin-top: 60px;
+    width: 320px;
+}
+
+.loginButton {
+    float: right;
+    margin-top: 8px;
+}
+
+.box {
+    background-color: #fcf8ff;
+    border: 1px solid #dedae1;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    padding: 16px;
+    color: #24355f;
+}
+
+.errorMessage {
+    border: 1px solid #8d4c4c;
+    background-color: #fdfbac;
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: -9px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.errorContainer {
+    margin-bottom: 12px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #44b5df;
+    border: 0px solid black;
+    border-radius: 3px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.button:hover {
+    background-color: #54c5ef;
+}
+
+.forgotPassword {
+    font-size: 11px;
+    color: #24355f;
+    text-decoration: underline;
+    float: right;
+}
