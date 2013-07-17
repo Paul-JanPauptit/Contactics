@@ -31,6 +31,7 @@ namespace Contactisch
             {
                 ErrorContainer.Visible = true;
                 MessageLabel.Text = "Invalid username or password.";
+                Password.Focus();
             }
         }
 

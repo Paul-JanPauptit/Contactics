@@ -11,7 +11,9 @@
     <div>
        Hello 
         <asp:Label ID="Username" runat="server" Text="Label"></asp:Label>,
-        here are all your contacts!
+        here are all your contacts!<br />
+        <br />
+        <asp:Label ID="ContactsLabel" runat="server" Text="Label"></asp:Label>
     </div>
     </form>
 </body>
