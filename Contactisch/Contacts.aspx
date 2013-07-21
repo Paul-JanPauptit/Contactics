@@ -11,14 +11,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-       Hello  
-        <asp:Label ID="Username" runat="server" Text="Label"></asp:Label>,
-        here are all your contacts!<br />
-        <br />
-        <asp:Label ID="ContactsLabel" runat="server" Text="Label"></asp:Label>
         <asp:ListView ID="ListView1" runat="server" ItemType="Contactisch.Contact">
             <ItemTemplate>
-                <div class="businessCard"><%# Item.FullName %></div>
+                <div class="businessCard">
+                    <div class="lineName"><%# Item.FullName %></div>
+                    <div><%# Item.Phone %></div>
+                    <div><%# Item.Email %></div>
+                </div>
             </ItemTemplate>
         </asp:ListView>
     </div>

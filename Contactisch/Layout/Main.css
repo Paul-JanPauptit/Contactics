@@ -110,12 +110,25 @@ form {
 }
 
 .businessCard {
-    width: 200px;
-    height: 120px;
+    width: 240px;
+    height: 80px;
     background-color: #fcf8ff;
     border: 1px solid #dedae1;
     border-bottom-width: 2px;
     border-radius: 3px;
     padding: 16px;
     color: #24355f;
+    margin: 8px;
+    float: left;
+}
+
+.businessCard div {
+    color: #24355f;
+}
+
+.businessCard div.lineName 
+{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1em;
 }

@@ -11,17 +11,10 @@ namespace Contactisch
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Username.Text = Context.User.Identity.Name;
-
             String contactsDescription = "";
             using (var context = new ContacticsContext())
             {
-
                 User user = GetUser(context);
-
-                contactsDescription = String.Join(", ", user.Contacts.Select(c => c.FullName).ToArray());
-
-                ContactsLabel.Text = contactsDescription;
 
                 ListView1.DataSource = user.Contacts;
                 ListView1.DataBind();
