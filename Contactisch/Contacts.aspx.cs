@@ -19,18 +19,12 @@ namespace Contactisch
 
                 User user = GetUser(context);
 
-                // TODO, PJ: More elegant conditional string concatenation?
-                foreach (Contact contact in user.Contacts)
-                {
-                    if (contactsDescription != "")
-                    {
-                        contactsDescription += ", ";
-                    }
-
-                    contactsDescription += contact.FullName;
-                }
+                contactsDescription = String.Join(", ", user.Contacts.Select(c => c.FullName).ToArray());
 
                 ContactsLabel.Text = contactsDescription;
+
+                ListView1.DataSource = user.Contacts;
+                ListView1.DataBind();
             }
         }
 

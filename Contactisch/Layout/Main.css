@@ -108,3 +108,14 @@ form {
     text-decoration: underline;
     float: right;
 }
+
+.businessCard {
+    width: 200px;
+    height: 120px;
+    background-color: #fcf8ff;
+    border: 1px solid #dedae1;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    padding: 16px;
+    color: #24355f;
+}
