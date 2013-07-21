@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contactisch", "Contactisch\Contactisch.csproj", "{6CB881C9-CFF8-48C4-9594-BC50D8B2B6E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitializeDatabase", "InitializeDatabase\InitializeDatabase.csproj", "{C4F61E18-D1F7-4677-87CC-9BCC594CA280}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{6CB881C9-CFF8-48C4-9594-BC50D8B2B6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB881C9-CFF8-48C4-9594-BC50D8B2B6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB881C9-CFF8-48C4-9594-BC50D8B2B6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F61E18-D1F7-4677-87CC-9BCC594CA280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F61E18-D1F7-4677-87CC-9BCC594CA280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F61E18-D1F7-4677-87CC-9BCC594CA280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F61E18-D1F7-4677-87CC-9BCC594CA280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
