@@ -19,16 +19,16 @@
                 <asp:Label ID="UsernameLabel" runat="server" Text="Username"></asp:Label>
             </div>
             <div class="inputContainer">
-                <asp:TextBox CssClass="input" ID="Username" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="input" ID="Username" runat="server" tabindex="1"></asp:TextBox>
             </div>
             <div class="label">
                 <asp:Label ID="PasswordLabel" runat="server" Text="Password"></asp:Label>
-                <a class="forgotPassword" href="ResetPassword.aspx">Forgot your password?</a>
+                <a class="forgotPassword" href="ResetPassword.aspx" tabindex="5">Forgot your password?</a>
             </div>
             <div class="inputContainer">
-                <asp:TextBox CssClass="input" ID="Password" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="input" ID="Password" TextMode="Password" runat="server" tabindex="2"></asp:TextBox>
             </div>
-            <asp:Button ID="LoginButton" CssClass="button loginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
+            <asp:Button ID="LoginButton" CssClass="button loginButton" runat="server" Text="Login" OnClick="LoginButton_Click" tabindex="3" />
         </form>
     </div>
 </body>
