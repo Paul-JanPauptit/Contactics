@@ -11,7 +11,6 @@ namespace Contactisch
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            String contactsDescription = "";
             using (var context = new ContacticsContext())
             {
                 User user = GetUser(context);
