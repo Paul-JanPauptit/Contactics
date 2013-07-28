@@ -15,8 +15,7 @@
     color: #24355f;
 }
 
-.inputContainer 
-{
+.inputContainer {
     padding-left: 5px;
     padding-right: 5px;
     margin: 0px;
@@ -56,6 +55,7 @@ form {
     margin-top: 60px;
     width: 320px;
 }
+
 .box {
     background-color: #fcf8ff;
     border: 1px solid #dedae1;
@@ -98,9 +98,9 @@ form {
     padding-right: 16px;
 }
 
-.button:hover {
-    background-color: #54c5ef;
-}
+    .button:hover {
+        background-color: #54c5ef;
+    }
 
 .forgotPassword {
     font-size: 11px;
@@ -108,6 +108,18 @@ form {
     text-decoration: underline;
     float: right;
 }
+
+.iconFont {
+    color: #44b5df;
+    position: relative;
+    top: 5px;
+    font-size: 76px;
+    cursor: pointer;
+}
+
+    .iconFont:hover {
+        color: #54c5ef;
+    }
 
 .businessCard {
     width: 240px;
@@ -122,19 +134,23 @@ form {
     float: left;
 }
 
-.businessCard div {
-    color: #24355f;
-}
+    .businessCard:hover {
+       border: 2px solid #bebad1;
+       margin-left: 7px;
+       margin-right: 7px;
+       margin-top: 7px;
+       margin-bottom: 8px;
+    }
 
-.businessCard div.lineName 
-{
-    font-weight: bold;
-    color: black;
-    margin-bottom: 1em;
-}
 
-.editLabel 
-{
+    .businessCard div.lineName {
+        font-weight: bold;
+        color: black;
+        margin-bottom: 1em;
+    }
+
+
+.editLabel {
     width: 60px;
     text-align: right;
     float: left;
@@ -142,20 +158,22 @@ form {
     padding-bottom: 4px;
 }
 
-.editText 
-{
+.editText {
     width: 25em;
     margin-bottom: 8px;
     padding: 2px;
 }
 
-textarea 
-{
+textarea {
     overflow: auto;
 }
 
-#contact 
-{
+#contact {
     margin-top: 60px;
     width: 460px;
 }
+
+.addContact {
+    text-align: center;
+}
+

@@ -77,7 +77,8 @@ namespace Contactisch
             if (_contact == null)
             {
                 contact = new Contact();
-                DataContext.Contacts.Add(contact);
+                user.Contacts.Add(contact);
+                // DataContext.Contacts.Add(contact);
             }
             else
                 contact = _contact;

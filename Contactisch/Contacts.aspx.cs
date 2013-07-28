@@ -12,7 +12,7 @@ namespace Contactisch
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ListView1.DataSource = user.Contacts;
+            ListView1.DataSource = user.Contacts.OrderBy(c => c.FullName);
             ListView1.DataBind();
         }
     }

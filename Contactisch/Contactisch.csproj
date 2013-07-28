@@ -79,6 +79,8 @@
     <Content Include="Contactics.edmx.sql" />
     <Content Include="Contacts.aspx" />
     <Content Include="Images\LogoMain.png" />
+    <Content Include="Layout\Fonts.css" />
+    <Content Include="Layout\lte-ie7.js" />
     <Content Include="Layout\Main.css" />
     <Content Include="Login.aspx" />
     <Content Include="ResetPassword.aspx" />

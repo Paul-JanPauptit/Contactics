@@ -7,10 +7,16 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="Layout/Main.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' href='Layout/fonts.css' />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <a href="Contact.aspx">
+                <div class="businessCard addContact">
+                    <div class="iconFont icon-plus-sign"></div>
+                </div>
+            </a>
             <asp:ListView ID="ListView1" runat="server" ItemType="Contactisch.Contact">
                 <ItemTemplate>
                     <a href="Contact.aspx?id=<%# Item.Id %>">
