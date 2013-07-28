@@ -46,16 +46,16 @@ form {
     display: table;
 }
 
-#login {
-    margin-top: 60px;
-    width: 320px;
-}
 
-.loginButton {
+.confirmButton {
     float: right;
     margin-top: 8px;
 }
 
+#login {
+    margin-top: 60px;
+    width: 320px;
+}
 .box {
     background-color: #fcf8ff;
     border: 1px solid #dedae1;
@@ -131,4 +131,31 @@ form {
     font-weight: bold;
     color: black;
     margin-bottom: 1em;
+}
+
+.editLabel 
+{
+    width: 60px;
+    text-align: right;
+    float: left;
+    margin-right: 1em;
+    padding-bottom: 4px;
+}
+
+.editText 
+{
+    width: 25em;
+    margin-bottom: 8px;
+    padding: 2px;
+}
+
+textarea 
+{
+    overflow: auto;
+}
+
+#contact 
+{
+    margin-top: 60px;
+    width: 460px;
 }

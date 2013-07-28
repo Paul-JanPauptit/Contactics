@@ -12,7 +12,7 @@ namespace Contactisch
     using System;
     using System.Collections.Generic;
     
-    public partial class Contact
+    public partial class Contact 
     {
         public int Id { get; set; }
         public string FullName { get; set; }

@@ -28,7 +28,7 @@
             <div class="inputContainer">
                 <asp:TextBox CssClass="input" ID="Password" TextMode="Password" runat="server" tabindex="2"></asp:TextBox>
             </div>
-            <asp:Button ID="LoginButton" CssClass="button loginButton" runat="server" Text="Login" OnClick="LoginButton_Click" tabindex="3" />
+            <asp:Button ID="confirmButton" CssClass="button loginButton" runat="server" Text="Login" OnClick="LoginButton_Click" tabindex="3" />
         </form>
     </div>
 </body>

@@ -10,17 +10,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ListView ID="ListView1" runat="server" ItemType="Contactisch.Contact">
-            <ItemTemplate>
-                <div class="businessCard">
-                    <div class="lineName"><%# Item.FullName %></div>
-                    <div><%# Item.Phone %></div>
-                    <div><%# Item.Email %></div>
-                </div>
-            </ItemTemplate>
-        </asp:ListView>
-    </div>
+        <div>
+            <asp:ListView ID="ListView1" runat="server" ItemType="Contactisch.Contact">
+                <ItemTemplate>
+                    <a href="Contact.aspx?id=<%# Item.Id %>">
+                        <div class="businessCard">
+                            <div class="lineName"><%# Item.FullName %></div>
+                            <div><%# Item.Phone %></div>
+                            <div><%# Item.Email %></div>
+                        </div>
+                    </a>
+                </ItemTemplate>
+            </asp:ListView>
+        </div>
     </form>
 </body>
 </html>

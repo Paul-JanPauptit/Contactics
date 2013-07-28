@@ -75,6 +75,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contact.aspx" />
     <Content Include="Contactics.edmx.sql" />
     <Content Include="Contacts.aspx" />
     <Content Include="Images\LogoMain.png" />
@@ -86,6 +87,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.cs">
       <DependentUpon>Contactics.tt</DependentUpon>
     </Compile>
@@ -110,6 +118,9 @@
     </Compile>
     <Compile Include="Contacts.aspx.designer.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\GenericPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Login.aspx.cs">

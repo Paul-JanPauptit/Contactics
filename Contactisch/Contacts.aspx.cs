@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Contactisch.Generic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,24 +8,12 @@ using System.Web.UI.WebControls;
 
 namespace Contactisch
 {
-    public partial class Contacts : System.Web.UI.Page
+    public partial class Contacts : GenericPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (var context = new ContacticsContext())
-            {
-                User user = GetUser(context);
-
-                ListView1.DataSource = user.Contacts;
-                ListView1.DataBind();
-            }
-        }
-
-        private User GetUser(ContacticsContext aContext)
-        {
-            string username = Context.User.Identity.Name;
-
-            return aContext.Users.Where(u => u.Username == username).First();
+            ListView1.DataSource = user.Contacts;
+            ListView1.DataBind();
         }
     }
 }
